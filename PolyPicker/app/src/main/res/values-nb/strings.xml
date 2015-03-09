@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PolyPicker</string>
+    <string name="done">Ferdig</string>
+    <string name="cancel">Abvryt</string>
+    <string name="take_photo">Ta et bilde</string>
+    <string name="gallery">Galleri</string>
+    <string name="progress_title">Prosessering...</string>
+    <string name="no_images_selected">Ingen bilder er valgt</string>
+
+</resources>
