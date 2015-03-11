@@ -1,4 +1,26 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+version = '0.0.1'
+group = 'no.sysco'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://172.20.20.47:8080/nexus/content/repositories/releases") {
+                authentication(userName: 'apps', password: 'Apps8080')
+            }
+            snapshotRepository(url: "http://172.20.20.47:8080/nexus/content/repositories/snapshots") {
+                authentication(userName: 'apps', password: 'Apps8080')
+            }
+            pom.project {
+                artifactId 'polypicker'
+                name 'library'
+                packaging 'aar'
+            }
+        }
+    }
+}
 
 android {
     compileSdkVersion 21        // change it to 19 when SDK is downoaded
@@ -8,7 +30,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 14
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
     }
 
     buildTypes {
