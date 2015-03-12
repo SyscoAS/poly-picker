@@ -50,6 +50,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 		}
 	}
 
+    @Override
 	public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
 		// Log.e(TAG, "surfaceChanged => w=" + w + ", h=" + h);
 		// If your preview can change or rotate, take care of those events here.

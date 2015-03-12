@@ -209,7 +209,7 @@ public class ImagePickerActivity extends Activity implements ActionBar.TabListen
                 // TODO: user meaningful constants instead of merely integers
                 // to make this code more readable.
                 case 0:
-                    return new CwacCameraFragment();
+                    return new TakePictureFragment();
                 case 1:
                     return new GalleryFragment();
                 default:
