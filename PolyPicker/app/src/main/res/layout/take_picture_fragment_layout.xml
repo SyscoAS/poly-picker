@@ -6,7 +6,7 @@
         android:id="@+id/takePictureButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_camera"
+        android:src="@drawable/ic_camera_selector"
         android:scaleType="fitCenter"
         android:layout_centerInParent="true"
         android:background="@android:color/transparent"/>
